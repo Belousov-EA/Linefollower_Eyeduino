@@ -10,6 +10,7 @@ class Sensor
   public:
     Sensor(int _sencorCount, int _pins[]);
     inline T getValue();
+    void debug();
   protected:
     T value;
     int *pins;

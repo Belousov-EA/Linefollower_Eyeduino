@@ -18,3 +18,10 @@ T Sensor<T>::getValue()
   return value;
 }
 
+
+template <typename T>
+void Sensor<T>::debug()
+{
+  Serial.print (value);
+}
+

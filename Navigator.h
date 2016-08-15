@@ -12,6 +12,7 @@ class Navigator : public PdRegulator
     void call(float error);
     void init();
     float getSpeed();
+    void debug();
   private:
     float lowP;
     float lowD;

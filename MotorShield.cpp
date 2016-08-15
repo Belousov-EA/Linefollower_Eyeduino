@@ -21,3 +21,12 @@ void MotorShield::setPower(float leftP, float rightP)
   right.setPower(constrain(abs(rightP*255), 0, 255), rightP>0?0:1);
 }
 
+
+void MotorShield::debug()
+{
+  Serial.print("left motor: ");
+  left.debug();
+  Serial.print("right motor: ");
+  right.debug();
+}
+

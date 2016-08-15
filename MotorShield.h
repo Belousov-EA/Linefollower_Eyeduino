@@ -10,6 +10,7 @@ class MotorShield
     MotorShield(int lPower, int lDirection, int rPower, int rDirection);
     void init();
     void setPower(float leftP, float rightP);
+    void debug();
   private:
     Motor left;
     Motor right;

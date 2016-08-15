@@ -64,7 +64,26 @@ void LineFollower::vozvrat()
   }else
   {
     myNavigator.setPredError(-1.00);
-     motor.setPower(myNavigator.getSpeed()*(1-myNavigator.getP()), myNavigator.getSpeed()*(1+myNavigator.getP()));
+    motor.setPower(myNavigator.getSpeed()*(1-myNavigator.getP()), myNavigator.getSpeed()*(1+myNavigator.getP()));
   }
+}
+
+
+void LineFollower::debug()
+{
+  motor.debug();
+  myNavigator.debug();
+  Serial.print("line=");
+  exc.debug();
+  Serial.print(" distance=");
+  forward.debug();
+  Serial.println();
+}
+
+
+
+void LineFollower::initDebug()
+{
+  Serial.begin(115200);
 }
 

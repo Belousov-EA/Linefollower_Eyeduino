@@ -8,9 +8,11 @@ LineFollower bot(int DistancePin, int sensorCount, int sensors[],
 void setup() 
 {
   bot.init();
+  //bot.initDebug();
 }
 
 void loop() 
 {
   bot.call();
+  //bot.debug();
 }

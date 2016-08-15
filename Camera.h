@@ -10,5 +10,6 @@ class Camera : public Sensor <float>
     Camera();
     void init();
     void call();
+    
 };
 #endif

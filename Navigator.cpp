@@ -44,3 +44,17 @@ void  Navigator::call(float error)
   toRegulate(error);
 }
 
+
+void Navigator::debug()
+{
+  Serial.print("camera= ");
+  myCamera.debug();
+  Serial.print(" speed= ");
+  Serial.print(speed);
+  Serial.print (" P=");
+  Serial.print(p);
+  Serial.print (" d=");
+  Serial.print(d);
+  Serial.print(" ");
+}
+

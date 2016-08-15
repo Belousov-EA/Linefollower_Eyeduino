@@ -17,6 +17,7 @@ class LineFollower
     void init();
     void call();
     void debug();
+    void initDebug();
   private:
     void vozvrat();
     void motorCount();

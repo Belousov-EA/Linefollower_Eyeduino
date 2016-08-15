@@ -10,8 +10,11 @@
       Motor(int pPin, int dPin);
       void init();
       void setPower(int  power, bool direction);
+      void debug();
     private:
       const int powerPin;
       const int directionPin;
+      int _power;
+      bool _direction;
  };
 #endif
