@@ -4,7 +4,7 @@
 
 #include "Sensor.h"
 
-class Camera : public Sensor <float>
+class Camera : public Sensor<float>
 {
   public:
     Camera();

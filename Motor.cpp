@@ -28,7 +28,7 @@ void Motor::debug()
   Serial.print ("power =");
   Serial.print (_power);
   Serial.print (" derection =");
-  Serial.print (_derection);
+  Serial.print (_direction);
   Serial.print (" ");
 }
 

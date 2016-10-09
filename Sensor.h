@@ -8,7 +8,7 @@ template <typename T>
 class Sensor
 {
   public:
-    Sensor(int _sencorCount, int _pins[]);
+    Sensor(int _sensorCount, int _pins[]);
     inline T getValue();
     void debug();
   protected:
